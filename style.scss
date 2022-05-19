@@ -19,11 +19,12 @@ body {
 
 
 .slider{
-    width: 90vw;
+
     height:100vh;
     margin: auto;
     position: relative;
     overflow-x: hidden;
+    
     &__frame{
     
         width: 100%;
@@ -40,20 +41,35 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      
+      overflow: hidden;
           
-      width: 100%;
-      flex-shrink: 0;
+      width: 100vw;
 
        
     }
-    &__img{
-        width: 100%;
-        height: auto;
-        &-box{
-            width: 70%;
-            height: auto;
+    &__navigation{
+        position: absolute;
+        left:50%;
+        top: 50%;
+        border-radius: 3rem;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: fit-content;
+
+        &-button{
+            margin: 0 1rem;
         }
+    }
+    &__img{
+        height: 50%;
+        width: auto;
+
+        
+
     }
 
 }
