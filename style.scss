@@ -25,14 +25,16 @@ body {
 }
 
 .slider{
+    z-index: 10;
     padding: 4rem 0;
+   
     max-width: 500px;
     margin: auto;
     position: relative;
     overflow-x: hidden;
-    background-image: url(/images/pattern-bg.svg);
-    background-position: 50% 10%;
-    background-size: auto 50%;
+    background-image: url(/images/pattern-bg.svg), url(/images/pattern-quotes.svg);
+    background-position: 50% 10%, 50% 62%;
+    background-size: auto 47%, 20% auto;
     background-repeat: no-repeat;
     &__frame{
     	display: flex;
@@ -53,6 +55,7 @@ body {
       justify-content: space-between;
       width: 100%;
 	flex-shrink: 0;
+    
         
 
        
@@ -88,7 +91,8 @@ body {
         z-index: 99;
 
         &-button{
-            margin: 0 1.5rem;
+            
+            padding: .3rem 1.5rem;
         }
     }
     &__img{
@@ -113,8 +117,8 @@ body {
         align-items: center;
         height: 500px;
         padding: 0 3rem;
-        background-position:100% 50% ;
-        background-size: 65%;
+        background-position:100% 50%,  ;
+        background-size: 50%, 20%;
         z-index: -11;
        
         &__slide{
