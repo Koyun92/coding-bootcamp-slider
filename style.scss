@@ -42,6 +42,7 @@ body {
 	flex-direction: row;
     height: fit-content;
     max-height:95vh;
+    transition: .4s;
   
   
         
@@ -88,7 +89,8 @@ body {
         flex-direction: row;
         justify-content: center;
         height: fit-content;
-        z-index: 99;
+        cursor: pointer;
+        z-index: 999;
 
         &-button{
             
@@ -116,10 +118,10 @@ body {
         display: flex;
         align-items: center;
         height: 500px;
-        padding: 0 3rem;
-        background-position:100% 50%,  ;
-        background-size: 50%, 20%;
-        z-index: -11;
+        padding: 0 ;
+        background-position:100% 50%, 10% 25% ;
+        background-size: 50%, 10%;
+       
        
         &__slide{
            justify-content: center;
@@ -135,10 +137,11 @@ body {
         &__frame{
             height:100%;
             width: 100%;
+        
         }
         &__navigation{
             top: 90%;
-            transform: translate(60%, -50%);
+            transform: translate(110%, -50%);
         }
         &__img{
             position: absolute;

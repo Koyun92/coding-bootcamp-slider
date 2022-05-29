@@ -56,6 +56,8 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   max-height: 95vh;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .slider__slide {
@@ -120,7 +122,8 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  z-index: 99;
+  cursor: pointer;
+  z-index: 999;
 }
 
 .slider__navigation-button {
@@ -145,10 +148,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 500px;
-    padding: 0 3rem;
-    background-position: 100% 50%;
-    background-size: 50%, 20%;
-    z-index: -11;
+    padding: 0;
+    background-position: 100% 50%, 10% 25%;
+    background-size: 50%, 10%;
   }
   .slider__slide {
     -webkit-box-pack: center;
@@ -170,8 +172,8 @@ body {
   }
   .slider__navigation {
     top: 90%;
-    -webkit-transform: translate(60%, -50%);
-            transform: translate(60%, -50%);
+    -webkit-transform: translate(110%, -50%);
+            transform: translate(110%, -50%);
   }
   .slider__img {
     position: absolute;
