@@ -107,7 +107,6 @@ body {
   border-radius: 3rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 1rem;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +126,7 @@ body {
 }
 
 .slider__navigation-button {
-  padding: .3rem 1.5rem;
+  padding: 1.3rem 2.3rem;
 }
 
 .slider__img {
